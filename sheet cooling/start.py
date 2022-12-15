@@ -285,19 +285,24 @@ def openProjeto():
     Projetowin.grid_columnconfigure(0, weight=1)
     Projetowin.grid_rowconfigure(0,weight=1)
 
-    projtxt=ttk.Label(projframe, text ="Sobre o projeto em Python de um simulador de resfriamento de chapas finas")
+    projtxt=ttk.Label(projframe, text ='Os códigos em Python destacados neste manual têm como finalidade simular o resfriamento de chapas\n'
+                                       'metálicas por convecção. Eles foram criados para que o usuário, que fará contato com o programa por meio\n'
+                                       'de uma interface gráfica, analise o resfriamento de chapas de diferentes materiais. Vale ressaltar que, para\n'
+                                       'facilitar o desenvolvimento do programa, foi definida uma chapa ideal com apenas a face frontal em contato\n'
+                                       'com fluidos e objetos de transferência de calor. O programa utiliza o método das diferenças finitas e\n'
+                                       'apresenta condições periódicas de contorno da chapa. ')
     projtxt.grid(column=0,row=0)
     Projetowin.mainloop()
 
 def openIntegrantes():
     Integranteswin = Toplevel(root)
-    Integranteswin.title("Sobre os integrantes")
+    Integranteswin.title("Sobre os Desenvolvedores")
     inteframe = ttk.Frame(Integranteswin, padding=(5, 5, 10, 10))
     inteframe.grid(column=0, row=0, sticky=(N,W,E,S))
     Integranteswin.grid_columnconfigure(0, weight=1)
     Integranteswin.grid_rowconfigure(0,weight=1)
 
-    projtxt=ttk.Label(inteframe, text ="Sobre os integrantes:\n Enzo \n Gabriela \n Lucas \n Matheus \n Pedro \n Rafael")
+    projtxt=ttk.Label(inteframe, text ="Devs:\n Enzo Benko \n Gabriela Kaori \n Lucas Rogério \n Matheus Capelin \n Pedro Gabriel \n Rafael Cândido")
     projtxt.grid(column=0,row=0)
     Integranteswin.mainloop()
 
