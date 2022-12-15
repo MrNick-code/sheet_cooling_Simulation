@@ -133,5 +133,4 @@ def simula(m1='Cobre',m2='Ouro',m3='Ferro',m4='Bronze',f1='Ar',f2='Ar em movimen
         axes.add_patch(fancybox)
 
         plt.show()
-        
-   reinicio()
+    reinicio()
